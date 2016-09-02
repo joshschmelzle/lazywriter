@@ -3,6 +3,8 @@ An output stream that prints text to a console in a typewriter fashion :outbox_t
 
 Inspired by various text based games :space_invader: :video_game:
 
+[![gif with the typewriter effect][examples-link]][examples-link]
+
 # requirements
 
 - C#
@@ -24,3 +26,5 @@ static int Main(string[] args)
 # license
 
 project license can be found [here](LICENSE.md)
+
+[examples-link]:   https://github.com/joshschmelzle/lazywriter/blob/master/lazywriter.gif
