@@ -1,5 +1,5 @@
 # lazywriter
-An output stream that prints text to a console in a typewriter fashion. Inspired by various text based games. 
+An output stream that prints text to a console in a typewriter fashion :outbox_tray: :musical_keyboard: :flags: :computer:. Inspired by various text based games :space_invader: :video_game:. 
 
 # requirements
 
@@ -21,4 +21,4 @@ static int Main(string[] args)
 
 # license
 
-project license can be found here
+project license can be found [here](LICENSE.md)
