@@ -22,7 +22,7 @@ namespace LazyWriter
 
                 if (!Console.KeyAvailable)
                 {
-                    Thread.Sleep(25);
+                    Thread.Sleep(45);
                 }
             }
 
@@ -45,7 +45,7 @@ namespace LazyWriter
         {
             Console.CursorVisible = false;
 
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 5; i++)
             {
                 originalOut.Write(@"-");
                 Console.SetCursorPosition(Console.CursorLeft - 1, Console.CursorTop);
