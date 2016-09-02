@@ -1,2 +1,24 @@
 # lazywriter
-Prints out text to a windows console in a typewriter fashion
+An output stream that prints text to a console in a typewriter fashion. Inspired by various text based games. 
+
+# requirements
+
+- C#
+
+# sample usage
+
+```
+static int Main(string[] args)
+{
+  TypeWriter typewriter = new TypeWriter();
+  Console.SetOut(typewriter);
+  Console.WriteLine("Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...");
+  Console.WriteLine("There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...");
+  Console.ReadKey();
+  return 0;
+}
+```
+
+# license
+
+project license can be found here
