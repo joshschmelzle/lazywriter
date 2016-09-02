@@ -11,7 +11,7 @@ Inspired by various text based games :space_invader: :video_game:
 
 # sample usage
 
-```
+```csharp
 static int Main(string[] args)
 {
   TypeWriter typewriter = new TypeWriter();
