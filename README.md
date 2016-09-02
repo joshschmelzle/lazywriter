@@ -7,7 +7,7 @@ Inspired by various text based games :space_invader: :video_game:
 
 # requirements
 
-- C#
+- C# :musical_note:
 
 # sample usage
 
