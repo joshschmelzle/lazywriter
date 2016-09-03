@@ -1,7 +1,5 @@
 # lazywriter
-An output stream that prints text to a console in a typewriter fashion :outbox_tray: :musical_keyboard: :flags: :computer:
-
-Inspired by various text based games :space_invader: :video_game:
+An output stream that prints text to a console in a typewriter fashion :outbox_tray: :musical_keyboard: :flags: :computer: Inspired by various text based games :space_invader: :video_game:
 
 [![gif with the typewriter effect][examples-link]][examples-link]
 
