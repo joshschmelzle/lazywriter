@@ -1,7 +1,7 @@
 # lazywriter
 An output stream that prints text to a console in a typewriter fashion :outbox_tray: :musical_keyboard: :flags: :computer: Inspired by various text based games :space_invader: :video_game:
 
-[![gif with the typewriter effect][examples-link]][examples-link]
+[![gif with the typewriter effect][example]][example]
 
 # requirements
 
@@ -10,6 +10,8 @@ An output stream that prints text to a console in a typewriter fashion :outbox_t
 # sample usage
 
 Default effects
+
+[![gif with the typewriter effect][example]][example]
 
 ```csharp
 static void Main(string[] args)
@@ -24,12 +26,31 @@ static void Main(string[] args)
 
 Custom effects
 
+[![gif with a custom typewriter effect][example-custom]][example-custom]
+
 ```csharp
 static void Main(string[] args)
 {
-  TypeWriter typewriter = new TypeWriter(100, 100, 3);
+  TypeWriter typewriter = new TypeWriter(20, 50, 7);
   Console.SetOut(typewriter);
   Console.Write("Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...");
+  Console.Write("There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...");
+  Console.ReadKey();
+}
+```
+
+Multiple effects
+
+[![gif with a multiple typewriter effects][example-multiple]][example-multiple]
+
+```csharp
+static void Main(string[] args)
+{
+  TypeWriter fast = new TypeWriter(20, 50, 5);
+  TypeWriter slow = new TypeWriter(60, 50, 5);
+  Console.SetOut(fast);
+  Console.Write("Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...");
+  Console.SetOut(slow);
   Console.Write("There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...");
   Console.ReadKey();
 }
@@ -39,4 +60,6 @@ static void Main(string[] args)
 
 project license can be found [here](LICENSE.md)
 
-[examples-link]:   https://github.com/joshschmelzle/lazywriter/blob/master/lazywriter.gif
+[example]:   https://github.com/joshschmelzle/lazywriter/blob/master/lazywriter.gif
+[example-custom]:   https://github.com/joshschmelzle/lazywriter/blob/master/lazywriter-custom.gif
+[example-multiple]:   https://github.com/joshschmelzle/lazywriter/blob/master/lazywriter-multiple.gif
