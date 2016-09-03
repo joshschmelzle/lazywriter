@@ -13,6 +13,33 @@ namespace LazyWriter
         {
             originalOut = Console.Out;
         }
+        
+        public override void Write(string message)
+        {
+            foreach (char c in message)
+            {
+                originalOut.Write(c);
+
+                if (!Console.KeyAvailable)
+                {
+                    Thread.Sleep(45);
+                }
+            }
+
+            if (Console.KeyAvailable)
+            {
+                Console.ReadKey();
+            }
+
+            Animate();
+
+            if (Console.KeyAvailable)
+            {
+                Console.ReadKey();
+            }
+
+            originalOut.WriteLine();
+        }
 
         public override void WriteLine(string message)
         {
