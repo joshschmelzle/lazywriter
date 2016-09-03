@@ -5,7 +5,7 @@ An output stream that prints text to a console in a typewriter fashion :outbox_t
 
 # requirements
 
-- C# :musical_note:
+- C# 6 :musical_note:
 
 # sample usage
 
