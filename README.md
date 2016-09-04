@@ -16,7 +16,7 @@ Default effects
 ```csharp
 static void Main(string[] args)
 {
-  TypeWriter typewriter = new TypeWriter();
+  LazyWriter.TypeWriter typewriter = new LazyWriter.TypeWriter();
   Console.SetOut(typewriter);
   Console.Write("Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...");
   Console.Write("There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...");
@@ -31,7 +31,7 @@ Custom effects
 ```csharp
 static void Main(string[] args)
 {
-  TypeWriter typewriter = new TypeWriter(20, 50, 7);
+  LazyWriter.TypeWriter typewriter = new LazyWriter.TypeWriter(20, 50, 7);
   Console.SetOut(typewriter);
   Console.Write("Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...");
   Console.Write("There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...");
@@ -46,8 +46,8 @@ Multiple effects
 ```csharp
 static void Main(string[] args)
 {
-  TypeWriter fast = new TypeWriter(20, 50, 5);
-  TypeWriter slow = new TypeWriter(60, 50, 5);
+  LazyWriter.TypeWriter fast = new LazyWriter.TypeWriter(20, 50, 5);
+  LazyWriter.TypeWriter slow = new LazyWriter.TypeWriter(60, 50, 5);
   Console.SetOut(fast);
   Console.Write("Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...");
   Console.SetOut(slow);
