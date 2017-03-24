@@ -9,7 +9,7 @@ An output stream that prints text to a console in a typewriter fashion :outbox_t
 
 # sample usage
 
-Default effects
+Default effects:
 
 [![gif with the typewriter effect][example]][example]
 
@@ -24,7 +24,7 @@ static void Main(string[] args)
 }
 ```
 
-Custom effects
+Custom effects:
 
 [![gif with a custom typewriter effect][example-custom]][example-custom]
 
@@ -39,7 +39,7 @@ static void Main(string[] args)
 }
 ```
 
-Multiple effects
+Multiple effects:
 
 [![gif with a multiple typewriter effects][example-multiple]][example-multiple]
 
